@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reminder Calendar</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Reminder Calendar</h1>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button" id="monthYearDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Month
+          </button>
+          <div class="dropdown-menu" aria-labelledby="monthYearDropdown">
+            <a class="dropdown-item" href="#" data-value="0">January</a>
+            <a class="dropdown-item" href="#" data-value="1">February</a>
+            <a class="dropdown-item" href="#" data-value="2">March</a>
+            <a class="dropdown-item" href="#" data-value="3">April</a>
+            <a class="dropdown-item" href="#" data-value="4">May</a>
+            <a class="dropdown-item" href="#" data-value="5">June</a>
+            <a class="dropdown-item" href="#" data-value="6">July</a>
+            <a class="dropdown-item" href="#" data-value="7">August</a>
+            <a class="dropdown-item" href="#" data-value="8">September</a>
+            <a class="dropdown-item" href="#" data-value="9">October</a>
+            <a class="dropdown-item" href="#" data-value="10">November</a>
+            <a class="dropdown-item" href="#" data-value="11">December</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="calendar" class="row"></div>
+  </main>
+
+
+  <div id="reminder-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add Reminder</h2>
+      <form id="reminder-form">
+        <div class="form-group">
+          <input type="text" id="reminder-title" placeholder="Reminder Title" required>
+        </div>
+        <div class="form-group">
+          <textarea id="reminder-description" placeholder="Reminder Description" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="datetime-local" id="reminder-datetime" required>
+        </div>
+        <button type="submit">Save Reminder</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
+
