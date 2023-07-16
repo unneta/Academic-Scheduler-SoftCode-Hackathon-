@@ -1,0 +1,81 @@
+/* CSS styles for the Academic Planner website */
+
+ @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Rubik&display=swap');
+
+body {
+    background-color: rgb(218, 115, 212);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  header {
+    background:rgb(161, 98, 137);
+    font:bold;
+    font-family: 'Lilita One', cursive;;
+    padding: 20px;
+  }
+
+  .myvideo{
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:-1;
+  }
+
+  @media(min-aspect-ratio:1/1)
+  {
+    .myvideo{
+        width:100%;
+        height:auto;
+    }
+  }
+  @media(max-aspect-ratio:1/1)
+  {
+    .myvideo
+    {
+        width:auto;
+        height:100%;
+    }
+  }
+
+  .img
+  {
+    background-image:url("Study.jpg");
+  }
+
+  .intro
+  {
+    background: rgba(68, 10, 51, 0.849);
+    opacity: 50;
+    font-family: 'Caprasimo', cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 20;
+  }
+  
+  main {
+    margin: 10px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form input,
+  form select,
+  form button {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  

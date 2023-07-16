@@ -1,0 +1,36 @@
+/* Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Rubik&display=swap');
+body {
+    padding-top: 60px;
+  }
+  
+  .jumbotron {
+    background-image: url(back.jpg);
+    background-size: cover;
+    color: #faf8f8;
+    padding: 150px 0;
+    text-align: center;
+  }
+  
+  .carousel-caption
+  {
+    color:black;
+  }
+  
+  .navbar-brand
+  {
+    font-family: 'Lilita One', cursive;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 767px) {
+    .jumbotron {
+      padding: 100px 0;
+    }
+  }
+  
+  

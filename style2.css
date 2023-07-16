@@ -1,0 +1,214 @@
+/* style2.css */
+
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a1c3df;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1531d1;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #050216;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lilita One', cursive;;
+    color: #0a0529;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  /* Main styles */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  
+  /* Calendar styles */
+  #calendar {
+    background-color: #03063a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #calendar .day {
+    border: 1px solid #171686;
+    padding: 10px;
+    text-align: center;
+    font:bold
+  }
+  
+  #calendar .month-header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Highlight.js styles */
+  .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #333;
+    background: #f8f8f8;
+  }
+  
+  /* Adjust highlight.js code block styles for better visibility */
+  .hljs pre {
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  #open-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    }
+  
+  #open-modal-btn:before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: top 0.3s ease, left 0.3s ease;
+  }
+  
+  #open-modal-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  #open-modal-btn:hover:before {
+    top: -10%;
+    left: -10%;
+  }
+  
+  #open-modal-btn:active {
+    transform: scale(0.9);
+  }
+  
+  #open-modal-btn:active:before {
+    top: -30%;
+    left: -30%;
+  }
+
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    align: center;
+  }
+  
+  .day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .reminder {
+    margin-bottom: 5px;
+  }
+  
+  
